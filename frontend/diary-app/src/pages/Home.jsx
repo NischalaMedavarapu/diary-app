@@ -76,7 +76,7 @@ const Home = () => {
                             onClick={() => paginate(currentPage - 1)}
                             disabled={currentPage === 1}
                         >
-                            ⬅ Back in Time
+                            ⬅ Back to Time
                         </button>
 
                         {[...Array(totalPages)].map((_, index) => (
@@ -94,7 +94,7 @@ const Home = () => {
                             onClick={() => paginate(currentPage + 1)}
                             disabled={currentPage === totalPages}
                         >
-                            Into the Future ➡
+                            Into the Past ➡
                         </button>
                     </div>
                 )}
