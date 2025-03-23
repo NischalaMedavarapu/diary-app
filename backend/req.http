@@ -1,0 +1,52 @@
+###USER SIGNUP
+POST http://localhost:5000/api/user/signup
+Content-Type: application/json
+
+{
+    "email": "test@example.com",
+    "password": "password123"
+}
+
+###USER LOGIN
+POST http://localhost:5000/api/user/login
+Content-Type: application/json
+
+{
+    "email": "test@example.com",
+    "password": "password123"
+}
+
+###CREATE POST
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2QzYzM2YTIxYzkzN2RiYTNmZDViYjkiLCJpYXQiOjE3NDE5MzY0NjgsImV4cCI6MTc0MjE5NTY2OH0.c44Uh4o6AerPt65-pbUFzLFfDgGZIzI6T-m2tFcpdzI
+
+{
+    "date": "2025-03-14T00:00:00.000Z",
+    "title": "My Second Post",
+    "content": "This is the content of my first post."
+}
+
+###GET ALL POSTS
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2QzYzM2YTIxYzkzN2RiYTNmZDViYjkiLCJpYXQiOjE3NDE5MzE0NjEsImV4cCI6MTc0MjE5MDY2MX0.Too0A8S2-OQ6xFPAxXInXtOvDEnFYdJnk4spE7-MMeo
+
+###GET SINGLE POST
+GET http://localhost:5000/api/posts/67d3c3d736e8bb0021074c1b
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2QzYzM2YTIxYzkzN2RiYTNmZDViYjkiLCJpYXQiOjE3NDE5MzE0NjEsImV4cCI6MTc0MjE5MDY2MX0.Too0A8S2-OQ6xFPAxXInXtOvDEnFYdJnk4spE7-MMeo
+
+
+###UPDATE POST
+PATCH http://localhost:5000/api/posts/67d3c3d736e8bb0021074c1b
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2QzYzM2YTIxYzkzN2RiYTNmZDViYjkiLCJpYXQiOjE3NDE5MzE0NjEsImV4cCI6MTc0MjE5MDY2MX0.Too0A8S2-OQ6xFPAxXInXtOvDEnFYdJnk4spE7-MMeo
+
+{
+    "title": "Updated Title",
+    "content": "Updated content."
+}
+
+
+###DELETE POSTS
+DELETE http://localhost:5000/api/posts/67d3c3d736e8bb0021074c1b
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2QzYzM2YTIxYzkzN2RiYTNmZDViYjkiLCJpYXQiOjE3NDE5MzE0NjEsImV4cCI6MTc0MjE5MDY2MX0.Too0A8S2-OQ6xFPAxXInXtOvDEnFYdJnk4spE7-MMeo

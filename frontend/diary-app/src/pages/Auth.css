@@ -1,0 +1,77 @@
+/* 🌅 Light gradient background (Same as Home) */
+.auth-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #e0f7fa, #ffffff); /* Light pastel gradient */
+}
+
+/* 📝 Form Container */
+.auth-container {
+    background: rgba(255, 255, 255, 0.95); /* Soft transparency */
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    width: 380px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* 🎨 Form Title */
+.auth-form h3 {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* ✏️ Input Fields */
+.auth-form input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* 🟢 Input Focus Effect */
+.auth-form input:focus {
+    border-color: #0077b6;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(0, 119, 182, 0.3);
+}
+
+/* 🚨 Error Messages */
+.auth-form p {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ✨ Submit Button */
+.auth-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0077b6;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+/* 🎨 Button Hover Effect */
+.auth-form button:hover {
+    background-color: #005f8f;
+    transform: scale(1.05);
+}

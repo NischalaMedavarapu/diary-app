@@ -1,0 +1,295 @@
+/* 🌅 Light gradient background (For logged-out users) */
+.home-intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to right, #e0f7fa, #ffffff); /* Light pastel gradient */
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 50px;
+}
+
+/* 📖 Intro Page Title */
+.home-intro h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* 🖋️ Intro Page Tagline */
+.tagline {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+    color: #555;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+/* ✨ Call-to-Action */
+.cta {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🌅 Dashboard (For Logged-in Users) */
+.home-container {
+    display: flex;
+    align-items: flex-start; /* ✅ Aligns "Your Posts" and "Create a Post" at the top */
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 50px;
+    min-height: 100vh;
+    background: linear-gradient(to right, #dfe9f3, #ffffff); /* Soft gradient */
+}
+
+/* 📄 Left Side: Posts Section */
+.posts-section {
+    width: 55%; /* ✅ Ensures proper balance */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* ✏️ Right Side: Post Form */
+.post-form-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ✅ Ensures form stays centered */
+    justify-content: flex-start;
+    padding-right: 30px;
+}
+
+/* 📝 Fixes Alignment for Section Titles */
+.posts-section h1,
+.post-form-container h3 {
+    margin-top: 0;
+    padding: 0;
+    font-size: 35px;
+    color: #2c3e50;
+    font-family: "Playfair Display", serif;
+}
+
+/* 📜 Posts List */
+.posts-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+/* 📝 Post Form */
+.postForm {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+/* 📝 Post Item (Fix Spacing) */
+.post-item {
+    background: none;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px; /* ✅ Ensures even spacing between posts */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* 📝 Post Title Styling (Matches "Your Posts" Header) */
+.post-title {
+    font-size: 25px; /* ✅ Balanced with header */
+    color: #4a4e69; /* ✅ Muted dark blue-gray */
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-decoration: none; /* ✅ Removes default underline */
+}
+
+/* ❌ Remove Hover Effects */
+.post-title:hover {
+    color: #22223b; /* ✅ Slightly darker on hover */
+    text-decoration: none;
+}
+
+/* 🕒 Post Date & Time Styling */
+.post-date {
+    font-size: 14px;
+    color: #6c757d;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* ❌ No Posts Message */
+.no-posts-message {
+    font-size: 20px;
+    color: #6c5b7b;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+/* ✏️ Post Input Fields */
+.postForm input,
+.postForm textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+/* 📝 Focus Effects on Input Fields */
+.postForm input:focus,
+.postForm textarea:focus {
+    border-color: #6c5b7b;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(108, 91, 123, 0.3);
+}
+
+/* 🔴 Error Message */
+.error-message {
+    color: #ff6b6b;
+    font-size: 14px;
+    margin-top: -8px;
+}
+
+/* ✨ Submit Button */
+.postForm button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #6c5b7b, #c06c84);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🚀 Button Hover Effect */
+.postForm button:hover {
+    background: linear-gradient(to right, #5a4b6b, #a65a73);
+    transform: scale(1.05);
+}
+
+/* 🛑 Delete Button */
+.post-item button {
+    align-self: flex-start;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #97b6d6;
+    color: rgb(56, 53, 53);
+    transition: all 0.3s ease-in-out;
+}
+
+.post-item button:hover {
+    background-color: #d9534f;
+    transform: scale(1.05);
+}
+
+/* 🎯 Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+/* 🟡 Page Buttons */
+.page-btn {
+    background: #dfe9f3;
+    border: 1px solid #b0c4de;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    font-family: "Poppins", sans-serif;
+    color: #2c3e50;
+}
+
+/* 🔵 Active Page */
+.page-btn.active {
+    background: #6c5b7b;
+    color: white;
+    border: 1px solid #6c5b7b;
+}
+
+/* 🚀 Hover Effect */
+.page-btn:hover:not(.active) {
+    background: #c5d1e0;
+}
+
+/* ❌ Disabled Buttons */
+.page-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    background: #e6e6e6;
+}
+/* 🎯 Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+/* 🟡 Page Buttons */
+.page-btn {
+    background: #dfe9f3; /* ✅ Light pastel blue */
+    border: 1px solid #b0c4de;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    font-family: "Poppins", sans-serif;
+    color: #2c3e50;
+}
+
+/* 🔵 Active Page */
+.page-btn.active {
+    background: #6c5b7b; /* ✅ Muted purple */
+    color: white;
+    border: 1px solid #6c5b7b;
+    font-weight: bold;
+}
+
+/* 🚀 Hover Effect */
+.page-btn:hover:not(.active) {
+    background: #c5d1e0; /* ✅ Softer blue */
+}
+
+/* ❌ Disabled Buttons */
+.page-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    background: #e6e6e6;
+}

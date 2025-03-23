@@ -1,0 +1,59 @@
+/* 🌅 Background Matches Home */
+.diary-post-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    background: linear-gradient(to right, #dfe9f3, #ffffff);
+    padding: 80px 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 📝 Title Styling */
+.diary-post-container .post-title {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* 🕒 Date Styling */
+.diary-post-container .post-date {
+    font-size: 16px;
+    color: #6c757d;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    text-align: left;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+/* 📜 Post Content Styling */
+.diary-post-container .post-content {
+    max-width: 800px;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #333;
+    padding: 20px;
+    background: none;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+/* 📖 First Line Indentation */
+.diary-post-container .post-content p {
+    text-indent: 20px;
+    margin-bottom: 10px;
+}
+
+/* ⏳ Loading Message */
+.diary-post-container .loading-message {
+    font-size: 20px;
+    font-style: italic;
+    color: #6c757d;
+}
